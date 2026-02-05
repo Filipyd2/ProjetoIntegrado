@@ -1,5 +1,4 @@
-# ProjetoIntegrado
-ProjetoIntegradoFeiraConectada
+#ProjetoIntegradoFeiraConectada
 ========================================
 Linguagem de banco de dados = PostGresSQL
 ============================================================

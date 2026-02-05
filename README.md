@@ -3,7 +3,12 @@ ProjetoIntegradoFeiraConectada
 
 Linguagem de banco de dados = PostGresSQL
 
-Segue passo a passo do script de criação de tabelas:
+========================================================================================
+Script 1: Cria a  Database banco de dados nome CreateDatabase
+========================================================================================
+Script 2: Cria as Tabelas do banco de dados nome CreateTables conforme explicação abaixo
+========================================================================================
+Passo a passo do script de criação de tabelas:
 
 -- Criação da tabela Endereco (Entidade independente)
 

@@ -2,9 +2,9 @@
 ========================================
 Linguagem de banco de dados = PostGresSQL
 ============================================================
-Script 1: Cria a  Database banco de dados nome CreateDatabase
+Script 1 (CreateDatabase): Cria a  Database do banco de dados sistema_feira
 ========================================================================================
-Script 2: Cria as Tabelas do banco de dados nome CreateTables conforme explicação abaixo
+Script 2 (CreateTables): Cria as tabelas do banco de dados conforme explicação abaixo
 ========================================================================================
 Passo a passo do script de criação de tabelas:
 

@@ -1,9 +1,10 @@
 # ProjetoIntegrado
 ProjetoIntegradoFeiraConectada
 
-
+Linguagem de banco de dados = PostGresSQL
 
 Segue passo a passo do script de criação de tabelas:
+
 -- Criação da tabela Endereco (Entidade independente)
 
 -- Criação da tabela Usuario (Superclasse)

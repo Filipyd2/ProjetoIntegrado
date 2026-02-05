@@ -21,8 +21,6 @@ Passo a passo do script de criação de tabelas:
 -- Gerenciada por 1 Gestor (NOT NULL), Possui 1 Endereço (NOT NULL, UNIQUE para 1:1)
 
 -- Criação da tabela Assembleia
--- Registrada por 1 Gestor, Associada a 1 Feira.
--- A linha conectando a Endereco sugere uma localização.
 
 -- Criação da tabela Programacao
 -- Pertence a 1 Feira
@@ -36,6 +34,5 @@ Passo a passo do script de criação de tabelas:
 -- Relacionamento N:M entre Feira e Feirante
 
 -- Relacionamento N:M "Vende" entre Feirante e Produto
--- Inclui o atributo "Preco" do relacionamento.
 
 -- Relacionamento N:M "Fornece" entre Fornecedor e Produto

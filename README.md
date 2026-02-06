@@ -1,47 +1,66 @@
-#ProjetoIntegradoFeiraConectada
-========================================
-Linguagem de banco de dados = PostGresSQL
-============================================================
-Script 1 (CreateDatabase): Cria a  Database do banco de dados sistema_feira
-========================================================================================
-Script 2 (CreateTables): Cria as tabelas do banco de dados conforme explicação abaixo
-========================================================================================
-Passo a passo do script de criação de tabelas:
+# 🎯 Projeto Integrado II - Feira Conectada
 
--- Criação da tabela Endereco (Entidade independente)
+**Universidade Federal do Cariri (UFCA)**  
+**Análise e Desenvolvimento de Sistemas (ADS)**  
+**Disciplina**: PROJETO INTEGRADO II [ADS0013]  
+**Professor**: Prof. Allysson Allex Araújo  
 
--- Criação da tabela Usuario (Superclasse)
+---
 
--- Criação das Subclasses de Usuario
+## 👥 Equipe
 
--- Criação da tabela Fornecedor
--- Relacionamento (1,1) com Endereco: FK com UNIQUE e NOT NULL
+| Nome | Matrícula |
+|------|-----------|
+| Jefferson Rodrigues de Oliveira | 2025013432 |
+| Lucas Gabriel Correia Gonçalves | 2025013479 |
+| Luiz Filipy Soares da Silva | 2025013503 |
+| Marcelo dos Santos Alves | 2023010825 |
+| Weber Fernandes da Silva | 2025019356 |
 
--- Criação da tabela Feira
--- Gerenciada por 1 Gestor (NOT NULL), Possui 1 Endereço (NOT NULL, UNIQUE para 1:1)
+---
 
--- Criação da tabela Assembleia
+## 💾 Estrutura do Banco de Dados
 
--- Criação da tabela Programacao
--- Pertence a 1 Feira
+### Tecnologia
+- **SGBD**: PostgreSQL
 
--- Criação da tabela Produto
+### Scripts de Criação
 
--- Criação da tabela Telefone
--- Pode pertencer a Gestor, Feirante ou Fornecedor.
--- FKs anuláveis com Constraint CHECK para garantir exclusividade.
+#### 📝 Script 1: CreateDatabase
+Cria o banco de dados `sistema_feira`
 
--- Relacionamento N:M entre Feira e Feirante
+#### 📝 Script 2: CreateTables
+Cria todas as tabelas do banco de dados com as seguintes estruturas:
 
--- Relacionamento N:M "Vende" entre Feirante e Produto
+- **Endereco** - Entidade independente
+- **Usuario** - Superclasse
+  - Subclasses: Gestor, Feirante, Cliente
+- **Fornecedor** - Relacionamento 1:1 com Endereco
+- **Feira** - Gerenciada por 1 Gestor, possui 1 Endereço (1:1)
+- **Assembleia** - Eventos da feira
+- **Programacao** - Agendar atividades/ativações
+- **Produto** - Itens comercializados
+- **Telefone** - Contato (pode pertencer a Gestor, Feirante ou Fornecedor)
 
--- Relacionamento N:M "Fornece" entre Fornecedor e Produto
-========================================================================================
+#### Relacionamentos
+- **N:M**: Feira ↔ Feirante
+- **N:M**: Feirante —Vende→ Produto
+- **N:M**: Fornecedor —Fornece→ Produto
+
+---
 
 ## 📚 Componente Extensionista: O Projeto Físico
 
 ### O que é?
-O Projeto Físico de Banco de Dados é a fase de implementação técnica. É o momento em que pegamos a lógica de negócio definida nos diagramas e escrevemos os comandos SQL (DDL) específicos para o Sistema Gerenciador de Banco de Dados escolhido (neste caso, o PostgreSQL). Aqui, definimos tipos de dados (como VARCHAR ou SERIAL), criamos restrições (CONSTRAINTS) e configuramos a segurança dos dados.
+O Projeto Físico de Banco de Dados é a fase de implementação técnica. É o momento em que pegamos a lógica de negócio definida nos diagramas e escrevemos os comandos SQL (DDL) específicos para o Sistema Gerenciador de Banco de Dados escolhido (neste caso, o **PostgreSQL**). Aqui, definimos tipos de dados (como VARCHAR ou SERIAL), criamos restrições (CONSTRAINTS) e configuramos a segurança dos dados.
 
 ### Por que é importante?
 Um projeto físico bem feito facilita imensamente a escrita do código. Se o banco garante que um e-mail é único ou que um endereço não pode ficar "órfão", o programador precisa escrever menos código de validação no Back-end. Entender isso nos ajuda a criar aplicações mais eficientes, rápidas e com menos bugs.
+
+---
+
+## 📦 Componentes do Projeto
+
+- `CreateDatabase.sql` - Script de criação do banco de dados
+- `CreateTables.sql` - Script de criação das tabelas
+- `README.md` - Este arquivo com documentação do projeto

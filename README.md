@@ -47,6 +47,12 @@ Cria todas as tabelas do banco de dados com as seguintes estruturas:
 - **N:M**: Feirante —Vende→ Produto
 - **N:M**: Fornecedor —Fornece→ Produto
 
+### 📊 Diagrama Entidade-Relacionamento (DER)
+
+![DER - Projeto Físico](img/der.jpg)
+
+*Diagrama Entidade-Relacionamento elaborado para subsidiar a construção do projeto físico do banco de dados*
+
 ---
 
 ## 📚 Componente Extensionista: O Projeto Físico

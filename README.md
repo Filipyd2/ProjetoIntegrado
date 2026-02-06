@@ -70,3 +70,4 @@ Um projeto físico bem feito facilita imensamente a escrita do código. Se o ban
 - `CreateDatabase.sql` - Script de criação do banco de dados
 - `CreateTables.sql` - Script de criação das tabelas
 - `README.md` - Este arquivo com documentação do projeto
+- `img/der.jpg` - Diagrama Entidade-Relacionamento do projeto físico

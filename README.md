@@ -65,22 +65,8 @@ Um projeto físico bem feito facilita imensamente a escrita do código. Se o ban
 
 ---
 
-## 📦 Estrutura do Projeto
+## 📦 Componentes do Projeto
 
-```
-ProjetoIntegrado/
-│
-├── 📄 CreateDatabase.sql          # Script para criar o banco de dados
-├── 📄 CreateTables.sql            # Script para criar as tabelas e relacionamentos
-├── 📄 README.md                   # Documentação do projeto
-├── 📁 img/                        # Pasta com diagramas e imagens
-│   └── 📷 der.jpg                 # Diagrama Entidade-Relacionamento
-└── 📁 .git/                       # Repositório Git
-```
-
-## 📋 Arquivos do Projeto
-
-- **CreateDatabase.sql** - Script SQL para criação do banco de dados `sistema_feira`
-- **CreateTables.sql** - Script SQL para criação de todas as tabelas e relacionamentos
-- **README.md** - Este arquivo com documentação completa do projeto
-- **img/der.jpg** - Diagrama Entidade-Relacionamento (DER) do projeto
+- `CreateDatabase.sql` - Script de criação do banco de dados
+- `CreateTables.sql` - Script de criação das tabelas
+- `README.md` - Este arquivo com documentação do projeto
